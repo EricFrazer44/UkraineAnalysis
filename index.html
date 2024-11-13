@@ -62,6 +62,14 @@
             border-radius: 8px;
             border: 1px solid #ccc;
         }
+        .data-source {
+            font-size: 14px;
+            color: #666;
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            border-top: 1px solid #ddd;
+        }
     </style>
     <script>
         function showGraph(graphSrc, graphAlt) {
@@ -100,6 +108,9 @@
             </div>
             <div class="graph-display">
                 <img id="graphImage" src="./monthly_event_counts.png" alt="Monthly Event Counts">
+            </div>
+            <div class="data-source">
+                <p>Data Source: <a href="https://acleddata.com/explorer/" target="_blank">ACLED (Armed Conflict Location & Event Data)</a></p>
             </div>
         </div>
     </div>
