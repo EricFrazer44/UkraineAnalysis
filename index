@@ -82,7 +82,7 @@
             <p>Select a map to explore conflict events in Ukraine:</p>
             <div class="links">
                 <ul>
-                    <li><a href="ukraine_conflict_map_combined.html" target="_blank">Combined Conflict Events Map</a></li>
+                    <li><a href="./ukraine_conflict_map.html" target="_blank">Combined Conflict Events Map</a></li>
                 </ul>
             </div>
         </div>
@@ -92,12 +92,12 @@
             <h2>Statistical Graphs</h2>
             <p>Select a graph to view:</p>
             <div class="thumbnails">
-                <img src="monthly_event_counts.png" alt="Monthly Event Counts" onclick="showGraph('monthly_event_counts.png', 'Monthly Event Counts')">
-                <img src="monthly_fatalities.png" alt="Monthly Fatalities" onclick="showGraph('monthly_fatalities.png', 'Monthly Fatalities')">
-                <img src="event_type_distribution.png" alt="Event Type Distribution" onclick="showGraph('event_type_distribution.png', 'Event Type Distribution')">
+                <img src="./monthly_event_counts.png" alt="Monthly Event Counts" onclick="showGraph('monthly_event_counts.png', 'Monthly Event Counts')">
+                <img src="./monthly_fatalities.png" alt="Monthly Fatalities" onclick="showGraph('monthly_fatalities.png', 'Monthly Fatalities')">
+                <img src="./event_type_distribution.png" alt="Event Type Distribution" onclick="showGraph('event_type_distribution.png', 'Event Type Distribution')">
             </div>
             <div class="graph-display">
-                <img id="graphImage" src="monthly_event_counts.png" alt="Monthly Event Counts">
+                <img id="graphImage" src="./monthly_event_counts.png" alt="Monthly Event Counts">
             </div>
         </div>
     </div>
