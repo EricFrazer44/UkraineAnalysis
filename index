@@ -95,6 +95,7 @@
                 <img src="./monthly_event_counts.png" alt="Monthly Event Counts" onclick="showGraph('monthly_event_counts.png', 'Monthly Event Counts')">
                 <img src="./monthly_fatalities.png" alt="Monthly Fatalities" onclick="showGraph('monthly_fatalities.png', 'Monthly Fatalities')">
                 <img src="./event_type_distribution.png" alt="Event Type Distribution" onclick="showGraph('event_type_distribution.png', 'Event Type Distribution')">
+                <img src="./event_count_prediction.png" alt="Event Count Prediction" onclick="showGraph('event_count_prediction.png', 'Event Count Prediction')">
             </div>
             <div class="graph-display">
                 <img id="graphImage" src="./monthly_event_counts.png" alt="Monthly Event Counts">
