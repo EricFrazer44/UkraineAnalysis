@@ -2,78 +2,104 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ukraine Conflict Analysis</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            margin: 40px;
             background-color: #f8f9fa;
-            color: #333;
-        }
-        h1, h2 {
             color: #333;
         }
         h1 {
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 50px;
         }
         .container {
-            max-width: 900px;
+            max-width: 800px;
             margin: 0 auto;
         }
         .section {
             margin-bottom: 40px;
-            padding: 20px;
-            background: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            margin-bottom: 20px;
+        }
+        .links ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .links li {
+            margin-bottom: 10px;
+        }
+        .links a {
+            text-decoration: none;
+            color: #0066cc;
+            font-size: 18px;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+        .thumbnails {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+            justify-content: center;
+        }
+        .thumbnails img {
+            width: 150px;
+            height: auto;
+            cursor: pointer;
+            border: 1px solid #ccc;
             border-radius: 8px;
         }
-        .map-container iframe {
-            width: 100%;
-            height: 500px;
-            border: none;
-            border-radius: 8px;
+        .graph-display {
+            margin-top: 20px;
+            text-align: center;
         }
-        .chart-container img {
-            width: 100%;
+        .graph-display img {
+            max-width: 100%;
+            height: auto;
             border-radius: 8px;
+            border: 1px solid #ccc;
         }
     </style>
+    <script>
+        function showGraph(graphSrc, graphAlt) {
+            var graphImage = document.getElementById("graphImage");
+            graphImage.src = graphSrc;
+            graphImage.alt = graphAlt;
+        }
+    </script>
 </head>
 <body>
 
     <div class="container">
-        <h1>Analysis of the Ukraine Conflict (2022-2024)</h1>
+        <h1>Ukraine Conflict Analysis (2022-2024)</h1>
 
-        <!-- Map Section -->
-        <div class="section map-container">
-            <h2>Conflict Events Map</h2>
-            <p>This interactive map shows conflict events in Ukraine from 2022 to 2024. Red markers indicate events with fatalities, while blue markers indicate events with no reported fatalities.</p>
-            <iframe src="./ukraine_conflict_map.html"></iframe>
+        <!-- Maps Section -->
+        <div class="section">
+            <h2>Interactive Maps</h2>
+            <p>Select a map to explore conflict events in Ukraine:</p>
+            <div class="links">
+                <ul>
+                    <li><a href="ukraine_conflict_map_combined.html" target="_blank">Combined Conflict Events Map</a></li>
+                </ul>
+            </div>
         </div>
 
-        <!-- Monthly Event Counts Chart -->
-        <div class="section chart-container">
-            <h2>Monthly Event Counts</h2>
-            <p>This chart illustrates the monthly count of conflict events for each year, allowing a visual comparison of event frequency.</p>
-            <img src="./monthly_event_counts.png" alt="Monthly Event Counts Chart">
+        <!-- Graphs Section -->
+        <div class="section graph-selection">
+            <h2>Statistical Graphs</h2>
+            <p>Select a graph to view:</p>
+            <div class="thumbnails">
+                <img src="monthly_event_counts.png" alt="Monthly Event Counts" onclick="showGraph('monthly_event_counts.png', 'Monthly Event Counts')">
+                <img src="monthly_fatalities.png" alt="Monthly Fatalities" onclick="showGraph('monthly_fatalities.png', 'Monthly Fatalities')">
+                <img src="event_type_distribution.png" alt="Event Type Distribution" onclick="showGraph('event_type_distribution.png', 'Event Type Distribution')">
+            </div>
+            <div class="graph-display">
+                <img id="graphImage" src="monthly_event_counts.png" alt="Monthly Event Counts">
+            </div>
         </div>
-
-        <!-- Monthly Fatalities Chart -->
-        <div class="section chart-container">
-            <h2>Monthly Fatalities</h2>
-            <p>This line chart shows the trend in reported fatalities over time, highlighting any increases or decreases in conflict severity.</p>
-            <img src="./monthly_fatalities.png" alt="Monthly Fatalities Chart">
-        </div>
-
-        <!-- Event Type Distribution Chart -->
-        <div class="section chart-container">
-            <h2>Event Type Distribution</h2>
-            <p>This stacked bar chart compares the distribution of event types between the two years, revealing changes in conflict nature.</p>
-            <img src="./event_type_distribution.png" alt="Event Type Distribution Chart">
-        </div>
-
     </div>
 
 </body>
