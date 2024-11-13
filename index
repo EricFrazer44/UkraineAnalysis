@@ -63,6 +63,13 @@
             border: 1px solid #ccc;
         }
     </style>
+    <script>
+        function showGraph(graphSrc, graphAlt) {
+            var graphImage = document.getElementById("graphImage");
+            graphImage.src = graphSrc;
+            graphImage.alt = graphAlt;
+        }
+    </script>
 </head>
 <body>
 
@@ -75,6 +82,7 @@
             <div class="links">
                 <ul>
                     <li><a href="./ukraine_conflict_map.html" target="_blank">Combined Conflict Events Map</a></li>
+                    <li><a href="./clustermap.html" target="_blank">Conflict Cluster Map</a></li>
                 </ul>
             </div>
         </div>
