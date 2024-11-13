@@ -50,16 +50,31 @@
         <div class="section map-container">
             <h2>Conflict Events Map</h2>
             <p>This interactive map shows conflict events in Ukraine from 2022 to 2024. Red markers indicate events with fatalities, while blue markers indicate events with no reported fatalities.</p>
-            <iframe src="ukraine_conflict_map.html"></iframe>
+            <iframe src="./ukraine_conflict_map.html"></iframe>
         </div>
 
         <!-- Monthly Event Counts Chart -->
         <div class="section chart-container">
             <h2>Monthly Event Counts</h2>
             <p>This chart illustrates the monthly count of conflict events for each year, allowing a visual comparison of event frequency.</p>
-            <img src="monthly_event_counts.png" alt="Monthly Event Counts Chart">
+            <img src="./monthly_event_counts.png" alt="Monthly Event Counts Chart">
         </div>
 
         <!-- Monthly Fatalities Chart -->
         <div class="section chart-container">
-            <h2
+            <h2>Monthly Fatalities</h2>
+            <p>This line chart shows the trend in reported fatalities over time, highlighting any increases or decreases in conflict severity.</p>
+            <img src="./monthly_fatalities.png" alt="Monthly Fatalities Chart">
+        </div>
+
+        <!-- Event Type Distribution Chart -->
+        <div class="section chart-container">
+            <h2>Event Type Distribution</h2>
+            <p>This stacked bar chart compares the distribution of event types between the two years, revealing changes in conflict nature.</p>
+            <img src="./event_type_distribution.png" alt="Event Type Distribution Chart">
+        </div>
+
+    </div>
+
+</body>
+</html>
