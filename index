@@ -63,13 +63,6 @@
             border: 1px solid #ccc;
         }
     </style>
-    <script>
-        function showGraph(graphSrc, graphAlt) {
-            var graphImage = document.getElementById("graphImage");
-            graphImage.src = graphSrc;
-            graphImage.alt = graphAlt;
-        }
-    </script>
 </head>
 <body>
 
@@ -79,7 +72,6 @@
         <!-- Maps Section -->
         <div class="section">
             <h2>Interactive Maps</h2>
-            <p>Select a map to explore conflict events in Ukraine:</p>
             <div class="links">
                 <ul>
                     <li><a href="./ukraine_conflict_map.html" target="_blank">Combined Conflict Events Map</a></li>
